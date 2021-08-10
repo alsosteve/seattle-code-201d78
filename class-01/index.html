@@ -10,11 +10,16 @@
   </head>
   <body>
     <header>
-      <h1>Welcome to class</h1>
+      <h1>Welcome the class</h1>
       <!-- h1 is typaclly the largest header size
       This is where you put a nav bar -->
     </header>
     <main>
+      <p style="color: orange;"> What is your name? </p>
+      <p style="color: purple;"> where do you like to study? </p>
+      <p style="color: lightgreen;"> What is one of your hobbies? </p>
+      <p style="color: blue;"> What is your favorite day to do that? </p>
+
       <img src="https://libreshot.com/wp-content/uploads/2018/01/back-to-school-1536x1024.jpg">
       <p style="background-color: silver;">This is where we hold text content</p>
       <ul>
@@ -33,7 +38,16 @@
       // the return value on prompt is the response the user gave in the window, it comes back as a string
       // debugger;
       console.log('The user name is ', + userName);
-      alert('welcome to my new webpage '+ userName);
+
+      let studyLocation= prompt('Hello '+ userName + '! Where do you like to study?');
+
+      let hobby= prompt('well '+ userName + ', who works from ' + studyLocation + '. What is one of your hobbies?');
+
+      let day= prompt('So your name is '+ userName + ', who works from ' + studyLocation + ', and likes to ' + hobby + ' for fun. What is your favorite day to do that?');
+
+      alert('welcome to my website ' + userName + ', who works from ' + studyLocation + ', and likes to ' + hobby + ' for fun on ' + day );
+
+
       // creates an alert pop up window
       // all functions in JavaScript have return value
       // the defaut return value is undefined
